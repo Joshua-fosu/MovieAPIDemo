@@ -1,0 +1,25 @@
+.body-light {
+    background-color: white;
+}
+
+.body-dark {
+    background-color: black;
+}
+
+.theme-light {
+    background-color: white !important;
+}
+
+.theme-dark {
+    background-color: black !important;
+}
+
+.card-light {
+    background-color: white;
+    color: black;
+}
+
+.card-dark {
+    background-color: black;
+    color: white;
+}
