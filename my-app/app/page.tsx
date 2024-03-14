@@ -22,7 +22,7 @@ export default function Home() {
 
   useEffect(() => {
     const getMovies = async () => {
-      await axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${title}`)
+      await axios.get(`http://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_API_KEY}&s=${title}`)
         .then((res) => {
           console.log(res.data);
           setMovies(res.data.Search || []);
@@ -40,7 +40,7 @@ export default function Home() {
           <Row style={{ margin: '0.5rem' }}>
             {movies.length > 0 && movies.map((movie) => (
               <MyCard movie={movie}/>
-            ))}
+            ))} 
           </Row>
         </Container>
       </ThemeContext.Provider>
